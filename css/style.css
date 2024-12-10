@@ -593,7 +593,6 @@ a:focus {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   font-size: 16px;
-  color:rgba(0, 0, 0, 0.4);
   background-color: transparent;
   outline: none;
   box-sizing: border-box;
@@ -613,6 +612,10 @@ a:focus {
 }
 
 .contact_section .contact-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_section .contact-form textarea::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 
