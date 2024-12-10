@@ -52,9 +52,9 @@
 
               <div class="user_option">
                 <a href=""><img src="images/user.png" alt=""></a>
-                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                </form>
+                </form> -->
               </div>
             </div>
           </div>
@@ -375,7 +375,6 @@
                   <div>
                     <textarea name="message" placeholder="Tu mensaje" class="input_message" required></textarea>
                   </div>
-                  <input type="hidden" name="_redirect" value="https://www.akronixweb.com/gracias.html">
                   <div class="d-flex justify-content-center">
                     <button type="submit" class="btn_on-hover">Enviar</button>
                   </div>
@@ -429,7 +428,7 @@
           <div class="info_form ">
             <h5>¿Querés recibir novedades?</h5>
             
-            <form action="https://formspree.io/f/xvgonbaz" method="POST" id="form-contact">
+            <form action="https://formspree.io/f/xvgonbaz" method="POST">
               <input type="email" name="email" placeholder="Ingresa tu email" required>
               <button>Suscribirse</button>
             </form>
@@ -483,18 +482,6 @@
     });
   </script>
   <!-- end owl carousel script -->
-
-  <!-- Clean contact form -->
-  <script>
-    window.addEventListener("pageshow", (event) => {
-        const form = document.getElementById("form-contact");
-        if (form) {
-            form.reset();
-        }
-    });
-  </script>
-  <!-- end clean contact form script -->
-
 </body>
 
 </html>
