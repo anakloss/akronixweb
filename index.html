@@ -44,56 +44,23 @@
 
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" data-no-scroll="1" data-easing="ease"
-    data-easing2="ease" role="banner" class="navbar w-nav">
+    data-easing2="ease" role="banner" class="navbar w-nav" id="home">
     <div class="w-container"><a href="/" aria-current="page" class="logo-block w-nav-brand w--current"><img
           src="images/akronix_logo.png" width="Auto" height="Auto" alt=""
           class="logo" /></a>
-      <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" aria-current="page"
-          class="nav-link light w-nav-link w--current">Inicio</a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="#home" aria-current="page" class="nav-link light w-nav-link w--current">Inicio</a>
         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
-          <div class="nav-link light w-dropdown-toggle">
-            <div>Servicios</div>
-          </div>
-          <nav class="dropdown-list w-dropdown-list"><a href="/homepages/home-business-3"
-              class="dropdown-link w-dropdown-link">Home (Business 1)</a><a href="/homepages/home-business-2"
-              class="dropdown-link w-dropdown-link">Home
-              (Business 2)</a><a href="/homepages/home-iphone-app" class="dropdown-link w-dropdown-link">Home (iPhone
-              App)</a><a href="/homepages/home-portfolio" class="dropdown-link w-dropdown-link">Home (Portfolio)</a>
-          </nav>
+          <a href="#services" aria-current="page" class="nav-link light w-nav-link">Servicios</a>
         </div>
         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
-          <div class="nav-link light w-dropdown-toggle">
-            <div>Proyectos</div>
-          </div>
-          <nav class="dropdown-list w-dropdown-list"><a href="/about/about-1"
-              class="dropdown-link w-dropdown-link">About #1</a><a href="/about/about-2"
-              class="dropdown-link w-dropdown-link">About #2</a><a href="/about/about-3"
-              class="dropdown-link w-dropdown-link">About #3</a><a href="/about/about-4"
-              class="dropdown-link w-dropdown-link">About #4</a><a href="/about/about-5"
-              class="dropdown-link w-dropdown-link">About #5</a></nav>
+          <a href="#homepages" aria-current="page" class="nav-link light w-nav-link">Proyectos</a>
         </div>
         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
-          <div class="nav-link light w-dropdown-toggle">
-            <div>nosotros</div>
-          </div>
-          <nav class="dropdown-list w-dropdown-list"><a href="/blog-variations/blog-1"
-              class="dropdown-link w-dropdown-link">Blog Style #1</a><a href="/blog-variations/blog-2"
-              class="dropdown-link w-dropdown-link">Blog Style #2</a><a href="/blog-variations/blog-3"
-              class="dropdown-link w-dropdown-link">Blog Style #3</a></nav>
+          <a href="#nosotros" aria-current="page" class="nav-link light w-nav-link">Nosotros</a>
         </div>
         <div data-delay="0" data-hover="false" class="dropdown w-dropdown">
-          <div class="nav-link light w-dropdown-toggle">
-            <div>Contacto</div>
-          </div>
-          <nav class="dropdown-list w-dropdown-list"><a href="/contact/contact-1"
-              class="dropdown-link w-dropdown-link">Contact #1</a><a href="/contact/contact-2"
-              class="dropdown-link w-dropdown-link">Contact #2</a><a href="/contact/contact-3"
-              class="dropdown-link w-dropdown-link">Contact #3</a><a href="/contact/contact-4"
-              class="dropdown-link w-dropdown-link">Contact #4</a><a href="/contact/contact-5"
-              class="dropdown-link w-dropdown-link">Contact #5</a><a href="/sign-up-forms/sign-up-1"
-              class="dropdown-link w-dropdown-link">Sign Up #1</a><a href="/sign-up-forms/sign-up-2"
-              class="dropdown-link w-dropdown-link">Sign Up #2</a></nav>
-        </div>
+          <a href="#contact" aria-current="page" class="nav-link light w-nav-link">Contacto</a>
       </nav>
       <div class="transparant-menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -118,7 +85,7 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="services">
     <div class="container home-intro-container w-container">
       <div data-ix="fade-in-zoom" class="home-intro-wrapper"><a href="/homepages/home-business-2"
           class="home-intro-link-block w-inline-block">
@@ -245,18 +212,18 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section" id="contact">
     <div class="container w-container">
       <div class="map-and-form-wrapper w-clearfix">
         <div class="worldmap-left-wrapper"><img src="images/worldmap-2.png" alt="" class="worldmap-left" />
           <div class="map-marker"></div>
         </div>
         <div class="map-contact-form w-form">
-          <form id="wf-form-Email-Form" name="wf-form-Email-Form-2" data-name="Email Form 2" method="get"
+          <form id="wf-form-Email-Form" name="wf-form-Email-Form-2" data-name="Email Form 2"
             data-wf-page-id="67c3105c1bdaee086adcb2e5" data-wf-element-id="6bba8da0-43bd-9f80-4236-b6de58251ae4"
             action="https://formspree.io/f/xkgnardd" method="POST">
             <div class="contact-title-wrapper">
-              <h2 class="section-title">¡Contactanos!</h2>
+              <h2 class="section-title">¡Contáctanos!</h2>
             </div>
             <div class="w-row">
               <div class="field-column w-col w-col-6"><label for="name-2" class="field-label">Nombre:</label>
@@ -313,22 +280,19 @@
       </div>
     </div>
     <div class="homepage-row w-row">
-      <div class="homepage-column w-col w-col-4"><a href="/homepages/home-portfolio"
-          class="homepage-link-block w-inline-block"><img src="images/home-portfolio.jpg" alt=""
-            class="homepage-screenshot" /></a><a href="/homepages/home-iphone-app"
-          class="homepage-link-block w-inline-block"><img src="images/home-app.jpg" alt=""
-            class="homepage-screenshot" /></a></div>
-      <div class="homepage-column w-col w-col-4"><a href="/homepages/home-business-3"
-          class="homepage-link-block w-inline-block"><img src="images/home-business-2.jpg" alt=""
-            class="homepage-screenshot" /></a><a href="/homepages/home-download"
-          class="homepage-link-block w-inline-block"><img src="images/home-download.jpg" alt=""
-            class="homepage-screenshot" /></a></div>
-      <div class="homepage-column w-col w-col-4"><a href="/homepages/home-business-2"
-          class="homepage-link-block w-inline-block"><img src="images/home-business-1.jpg" alt=""
-            class="homepage-screenshot" /></a></div>
+      <div class="homepage-column w-col w-col-4"></div>
+      <div class="homepage-column w-col w-col-4">
+        <a href="" class="homepage-link-block w-inline-block">
+          <video class="homepage-screenshot" autoplay muted loop>
+            <source src="images/comming-soon.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        </a>
+      </div>
+      <div class="homepage-column w-col w-col-4"></div>
     </div>
   </div>
-  <div class="footer">
+  <div class="footer" id="nosotros">
     <div class="container footer-container w-container">
       <div class="footer-row block w-row">
         <div class="footer-column w-col w-col-8">
