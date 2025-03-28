@@ -5400,6 +5400,12 @@ figcaption {
   margin-bottom: 30px;
 }
 
+.contact-title-wrapper h2 {
+  font-family: Montserrat, sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
 .contact-info-block {
   text-align: left;
   border: 2px solid #ffffff40;

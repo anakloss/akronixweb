@@ -47,9 +47,11 @@
     body {
       font-family: 'Source Sans Pro', sans-serif;
     }
+
     .montserrat {
       font-family: 'Montserrat', sans-serif;
     }
+
     .exo {
       font-family: 'Exo', sans-serif;
     }
@@ -240,18 +242,19 @@
             <div class="w-row">
               <div class="field-column w-col w-col-6"><label for="name-2" class="field-label">Nombre:</label>
                 <input type="text" name="name" id="name-2" class="dark-field w-input" maxlength="256" data-name="Name 2"
-                  placeholder="" />
+                  placeholder="" required />
               </div>
               <div class="field-column w-col w-col-6"><label for="Surname-2" class="field-label">Apellido:</label><input
                   class="dark-field w-input" maxlength="256" name="surname" data-name="Surname 2" placeholder=""
-                  type="text" id="Surname-2" />
+                  type="text" id="Surname-2" required />
               </div>
             </div><label for="Email-2" class="field-label">Email:</label><input class="dark-field w-input"
-              maxlength="256" name="email" data-name="Email 2" placeholder="" type="email" id="Email-2" />
+              maxlength="256" name="email" data-name="Email 2" placeholder="" type="email" id="Email-2" required />
             <label for="Phone-3" class="field-label">N° de teléfono:</label><input class="dark-field w-input"
-              maxlength="256" name="phone" data-name="Phone 2" placeholder="" type="text" id="Phone-2" />
+              maxlength="256" name="phone" data-name="Phone 2" placeholder="Ej: 11 1234 5678 sin espacios"
+              type="tel" id="Phone-2" pattern="[0-9]{10}" required />
             <label for="Message-2" class="field-label">tu Mensaje:</label><textarea id="Message-2" name="message"
-              maxlength="5000" data-name="Message 2" placeholder="" class="dark-field area w-input"></textarea>
+              maxlength="5000" data-name="Message 2" placeholder="" class="dark-field area w-input" required></textarea>
             <input type="submit" data-wait="Por favor, espera..." class="button full-submit w-button" value="Enviar" />
           </form>
           <div class="success-message w-form-done">
